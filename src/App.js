@@ -1,23 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Weather from "./Weather";
+import WeatherSearch from "./WeatherSearch";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Weather />
-        <p>
-          <form>
-            <input type="search" placeholder="Enter a city..." />
-            <button type="submit">Search</button>
-          </form>
-        </p>
-        <div>
+        <WeatherSearch />
+
+        <div className="Code-link-line">
           {" "}
           <a
-            className="App-link"
-            href="https://reactjs.org"
+            className="Code-link"
+            href="https://github.com/SaraSaria/weather-react"
             target="_blank"
             rel="noopener noreferrer"
           >
